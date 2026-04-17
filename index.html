@@ -78,6 +78,14 @@
       line-height: 1.25;
     }
 
+    .intro-note {
+      margin: 10px 0 0;
+      max-width: 700px;
+      color: #ccc;
+      line-height: 1.55;
+      font-size: 0.98rem;
+    }
+
     button {
       appearance: none;
       border: none;
@@ -243,7 +251,10 @@
     <main class="app">
       <div class="topbar">
         <div class="title-group">
+          <div>
           <h1 class="main-title">Interactive adaptation of life in Auschwitz, inspired by "This Way for the Gas, Ladies and Gentlemen."</h1>
+          <p class="intro-note">This interactive story adapts my analysis of "This Way for the Gas, Ladies and Gentlemen" by Tadeusz Borowski. It explores how the camp environment forces prisoners into obedience, emotional detachment, and moral collapse in order to survive.</p>
+        </div>
         </div>
       </div>
 
@@ -321,6 +332,7 @@ You learn too late. Hesitation isn’t allowed here.`,
 You don’t even think about it.
 
 That’s what everyone else does. That’s how you stay safe.`,
+        quote: `The prisoners answer eagerly: “Jawohl.”`,
         choices: [
           { label: 'Continue', sub: '', next: 'helpChoice' }
         ],
@@ -448,6 +460,7 @@ Some are crying. Some don’t understand.
 You feel something rising in you.
 
 Do you hold onto it?`,
+        quote: `“I feel no pity. I am not sorry they’re going to the gas chamber.”`,
         choices: [
           { label: 'Feel it', sub: 'Let yourself react.', next: 'breakdownEnding' },
           { label: 'Shut it off', sub: 'Push it down.', next: 'numbPath' }
@@ -594,9 +607,9 @@ Life after this will never be the same.`,
 
 But you’re not the same person anymore.
 
-You know exactly what it took.
+Like the narrator in Borowski’s story, survival required losing empathy, morality, and identity.
 
-And you can’t unsee it.`,
+The camp did not just test survival. It reshaped what it means to be human.`,
         choices: [
           { label: 'Restart', sub: '', next: 'start' }
         ],
